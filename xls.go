@@ -1,6 +1,7 @@
 package xls
 
 import (
+	"fmt"
 	"io"
 	"os"
 
@@ -14,6 +15,10 @@ func Open(file string, charset string) (*WorkBook, error) {
 	} else {
 		return nil, err
 	}
+}
+
+func Blah() {
+	fmt.Println("blah")
 }
 
 //Open one xls file and return the closer
